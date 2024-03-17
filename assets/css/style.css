@@ -1,0 +1,261 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#FF5B2E;
+}
+.btn__icon{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;  
+    border-radius: 50%;
+    background: #FFFAF5;
+    border: 1px solid #FD5056;
+    box-shadow: 0px 13px 26px -8px #FF5B2E6B;
+}
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #FFFAF5;
+}
+
+/* =========== Common ==========  */
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Sora", sans-serif;
+}
+.container{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn{
+    --height:56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgb(0, 9, 88,0.7);
+    border-radius: 99px;
+    text-align: center;
+    font-weight: 600;
+    color:#000958;
+    transition: 0.3s;
+}
+.btn:hover{
+    opacity: 0.9;
+   cursor: pointer;
+}
+.btn--primary{
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ========= ke thua cac thuc tinh cua the cha ========== */
+input,
+template,
+select,
+button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+/* ============ Heder =========== */
+.header{
+    padding : 26px 0;
+}
+/* Căn 3 khối lên 1 hang */
+.hedear__inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+/* căn navbar lên 1 hang dọc */
+.navbar__list{
+    display: flex;
+}
+/* đặt khoang cách và kích thước cho chữ */
+.navbar__link,
+.header-action__link{
+    padding: 8px 18px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5E6085;
+}
+/* Hiệu ứng hover vào chữ */
+.navbar__link:hover{
+    text-shadow: -1px 0 0 currentColor;
+    color: #000958;
+}
+/* Tạo khoảng cách cho nut */
+.header-action__btn{
+    --height:50px;
+    min-width: 118px;
+}
+/* ========== End Header ========== */
+
+/* ========== Hero ========== */
+/* Tao khoang cach ben tren */
+.hero{
+    margin-top: 74px;
+}
+/* cho 2 khoi len 1 hang */
+.hero__inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    column-gap: 112px;
+}
+/* cho 2 khoi anh cua pet len tren 1 hang */
+.hero__media{
+    position: relative;
+    display: flex;
+    padding-bottom: 94px;
+}
+/* Căn chỉnh ảnh và kích thước của anh */
+.hero__img-wrap{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    background: #FE997B;
+    border-radius: 16px;   
+    border: 3px solid #FFFFFF
+}
+/* Cho độ rộng và chiều dài tối đa cảu ảnh */
+.hero__img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: inherit;
+}
+/* Căn chỉnh ảnh decor */
+.hero__decor{
+    position: absolute;
+    z-index: -1;
+}
+/* Căn chỉnh ảnh decor-01 */
+.hero__decor-left{
+    left: -58px;
+    bottom: 10px;
+}
+/* Căn chỉnh ảnh decor-02 */
+.hero__decor-right{
+    top: 17px;
+    right: -43px;
+}
+.hero__img-wrap-small{
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    margin:0 0 -54px -24px;
+    border: 2px solid #fddee1;
+    background: #FAA7AD;
+}
+/* ============= Hero-List ==========*/
+.hero__list{
+    position: absolute;
+    left: 129px;
+    bottom:0;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    box-shadow: -17px 14px 68px -4px #CFAE8440;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.hero__item{
+    display: flex;
+}
+.hero__item-thumb{
+    width: 40px;
+    height: 40px;
+    background-color: #FEC23F;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.hero__info-title{
+    font-family: Sora,sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #181E52;
+}
+.hero__info{
+    margin-left: 10px;
+}
+.hero__item-thumb-blue{
+    background-color: #6597C2;
+}
+.hero__info-skeleion-tough{
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    background: #ebebf2;
+}
+.hero__info-skeleion{
+    margin-top: 6px;
+    width: 39px;
+    height: 4px;
+    border-radius: 10px;   
+    background: #ebebf2;
+}
+.hero-item__separate{ 
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+    margin: 20px 0;
+    background:#F2F2F2;
+}
+/* ========== Hero-content ========== */
+.hero__heading{
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #000958;
+}
+.hero__desc{
+     margin-top: 24px;
+     font-size: 1.6rem;
+     max-width: 391px;
+     font-weight: 400;
+     line-height: 1.88;
+     color: #656689;
+}
+.hero__row{
+    margin-top: 38px;
+}
+.btn__cta-btn{
+    --height:60px;
+    min-width: 190px;
+    font-size: 1.6rem;
+    box-shadow: 0px 13px 26px -8px #FF5B2E6B;
+}
+.hero__cta-link{
+    margin-left: 24px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #000958;
+    text-decoration: underline;
+}
