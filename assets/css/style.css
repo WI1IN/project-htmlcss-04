@@ -79,7 +79,19 @@ button{
 
 /* ============ Heder =========== */
 .header{
-    padding : 26px 0;
+    width: 130rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px 0;
+    border: 2px solid #333;
+    background-color: #e3b5b8;
+    border-radius: 99px;
+
+}
+.header.fixed{
+    position: sticky;
+    top: 10px;
+    z-index: 1;
 }
 /* Căn 3 khối lên 1 hang */
 .hedear__inner{
