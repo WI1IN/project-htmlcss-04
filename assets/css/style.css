@@ -59,12 +59,25 @@ h1,h2,h3,h4,h5,h6{
 }
 .btn:hover{
     opacity: 0.9;
-   cursor: pointer;
+    cursor: pointer;
 }
 .btn--primary{
     color: #fff;
     background: var(--primary-color);
     border-color: var(--primary-color);
+}
+.section-heading{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.92;
+    color: #000958; 
+    line-height: 60px;
+}
+.section-desc{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+    color: #656689;
 }
 
 /* ========= ke thua cac thuc tinh cua the cha ========== */
@@ -79,18 +92,18 @@ button{
 
 /* ============ Heder =========== */
 .header{
-    width: 130rem;
+    width: 140rem;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 51px;
     padding: 15px 0;
-    border: 2px solid #333;
+    outline: none;
     background-color: #e3b5b8;
     border-radius: 99px;
 
 }
 .header.fixed{
     position: sticky;
-    top: 10px;
+    top: 0px;
     z-index: 1;
 }
 /* Căn 3 khối lên 1 hang */
@@ -270,4 +283,259 @@ button{
     line-height: 1;
     color: #000958;
     text-decoration: underline;
+}
+/* =========== About ========== */
+.about{
+    margin-top: 138px;
+}
+.about__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 146px;
+}
+.about__label{
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #5E6085;
+}
+.about__heading{
+    margin-top: 15px;
+    width: 446px;
+}
+.about__desc{
+    margin-top: 24px;
+    width: 431px;
+}
+.about__checklist{
+    width: 477px;
+    grid-auto-rows: 34px;
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about__check-item{
+    position: relative;
+    display:flex;
+    align-items:center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #48496A;
+}
+.about__media{
+    position: relative;
+}
+.about__check-item::before{
+    margin-right: 10px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius:4px;  
+    background: #FF5D31;
+}
+.about__check-item::after{
+    position: absolute;
+    content: "";
+    text-align: center;
+    transform: translateX(-100%);
+    margin-left: 14.5px;
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 8px;
+    border-left: 2px solid #FFF2E5;
+    border-bottom: 2px solid #FFF2E5;
+    rotate: -45deg;
+    border-radius: 2px;
+}
+.about__card{
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    height: 156px;
+    padding: 30px 26px;
+    border-radius: 10px; 
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px 0px #55F0FF2B;
+}
+.about__card-title{
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color:#FFFFFF;
+    text-align: center;
+}
+.about__card-desc{
+    margin-top: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+    text-align: center;
+    color: #C6F4F9;
+}
+.about__card-decor{
+    position: absolute;
+    top: -39px;
+    right: -32px;
+}
+/* ========== About image wrapper ============ */
+.about__img-wrap{
+    margin-left: auto;
+    position: relative;
+    width: 494px;
+}
+.about__img-wrap::after{
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    border-radius: 10px;
+    height: 336px;
+    z-index: -1;
+}
+.about__img{
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+}
+.about__media-decor{
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
+}
+.about__img-wrap-bottom{
+    margin-left:0;
+    background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 17px 77px -8px #BEA58B2B;
+    border-radius: 18px;
+}
+.about__img-wrap-bottom::after{
+    content: none;
+}
+.about__img-bottom{
+    width: 100%;
+}
+.about__decor-img{
+    position: absolute;
+}
+.about__decor-img:nth-child(1){
+     top: 13px;
+     right: 64px;
+}
+.about__decor-img:nth-child(2){
+    top: -16px;
+    right: -13px;
+}
+.about__decor-img:nth-child(3){
+    top: 33px;
+    right: -21px;
+}
+.about__decor-img:nth-child(4){
+    top: 268px;
+    right: -33px;
+}
+.about__decor-img:nth-child(5){
+    bottom: 150px;
+    right: 19px;
+}
+.about__decor-img:nth-child(6){
+    bottom: -40px;
+    right: -23px;
+}
+.about__decor-img:nth-child(7){
+    bottom: -47px;
+    right: -33px;
+}
+.about__decor-img:nth-child(8){
+    bottom: -55px;
+    right: -42px;
+}
+.about__desc-bottom{
+        width: 511px;
+        margin-bottom: 50px;
+}
+.tab__list{
+    position: relative;
+    display: inline-flex;
+    column-gap: 56px;
+   
+}
+.tab__list::after,
+.tab__item--active::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 1px;
+    background: #FF5B2E;
+    opacity: 0.07;
+}
+.tab__item--active::after{
+    width: 95px;
+    opacity: 1;
+}
+/* Them position: relative; dinh vi theo the gan nhat */
+.tab__item{
+    position: relative;
+    display:flex;
+    align-items:center;
+    column-gap: 12px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.tab__icon{
+    width: 20px;
+}
+.tab__title{
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #48496A;
+}
+.tab__content{
+    margin-top: 36px;
+    
+}
+.tab__content-item{
+    display: none;
+}
+.tab__content-item-active{
+    display: block;
+}
+.tab__content-desc{
+    width: 391px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;  
+    color: #656689; 
+}
+.tab__content-more{
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #FF5D31;
+    padding-bottom: 5px;
+}
+.tab__content-more::after{
+    position: absolute;
+    content: "";
+    width: 86px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 1.5px solid #FF5D31;
+    border-radius: 0.7px;
 }
