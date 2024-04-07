@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /dang-ky.html
+Disallow: /dang-nhap.html
+Disallow: /abc/
+
+
+
+Sitemap: https://wi1in.github.io/project-htmlcss-04/sitemap.xml
